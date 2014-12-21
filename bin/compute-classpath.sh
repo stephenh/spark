@@ -33,9 +33,9 @@ fi
 
 # Build up classpath
 if [ -n "$SPARK_CONF_DIR" ]; then
-  CLASSPATH="$CLASSPATH:$SPARK_CONF_DIR"
+  CLASSPATH="$SPARK_CONF_DIR:$CLASSPATH"
 else
-  CLASSPATH="$CLASSPATH:$FWDIR/conf"
+  CLASSPATH="$FWDIR/conf:$CLASSPATH"
 fi
 
 ASSEMBLY_DIR="$FWDIR/assembly/target/scala-$SPARK_SCALA_VERSION"
