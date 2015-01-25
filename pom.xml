@@ -103,7 +103,6 @@
     <module>external/flume-sink</module>
     <module>external/mqtt</module>
     <module>external/zeromq</module>
-    <module>examples</module>
     <module>repl</module>
   </modules>
 
@@ -1575,9 +1574,6 @@
         <jline.version>${scala.version}</jline.version>
         <jline.groupid>org.scala-lang</jline.groupid>
       </properties>
-      <modules>
-        <module>external/kafka</module>
-      </modules>
     </profile>
 
     <profile>
